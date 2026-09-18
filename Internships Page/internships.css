@@ -1,42 +1,271 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+
 header {
-    background-color: #166534;
+    background-color: #172554;
     color: white;
     padding: 20px 8%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-header a {
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: #60a5fa;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #2563eb;
     color: white;
 }
 
+/* Page Heading */
+
+.page-heading {
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #eff6ff
+    );
+
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.tagline {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.page-heading h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    color: #172554;
+    margin-bottom: 18px;
+}
+
+.page-heading h1 span {
+    color: #2563eb;
+}
+
+.page-heading p:last-child {
+    color: #475569;
+    font-size: 17px;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Main Section */
+
 main {
-    padding: 30px 8%;
+    padding: 60px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: #172554;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+/* Internship Cards */
+
+.internship-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .internship {
     background-color: white;
-    padding: 22px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    width: 350px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+    transition: 0.3s;
 }
 
-.internship a {
-    color: #166534;
+.internship:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
 }
+
+/* Card Top */
+
+.internship-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.category {
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.duration {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Card Content */
+
+.internship h2 {
+    color: #172554;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.company {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #64748b;
+    margin-bottom: 20px;
+    min-height: 76px;
+}
+
+.details {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+    margin-bottom: 22px;
+}
+
+.details p {
+    color: #475569;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.details strong {
+    color: #1e293b;
+}
+
+/* Buttons */
 
 .button {
     display: inline-block;
-    background-color: #166534;
-    color: white !important;
-    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    padding: 11px 18px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .page-heading {
+        padding: 55px 5%;
+    }
+
+    .page-heading h1 {
+        font-size: 34px;
+    }
+
+    .page-heading p:last-child {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 45px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+    .internship {
+        width: 100%;
+        max-width: 400px;
+    }
+
 }

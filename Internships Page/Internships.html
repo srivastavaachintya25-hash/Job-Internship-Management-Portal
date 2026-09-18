@@ -1,41 +1,140 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Internships</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Portal | Internships</title>
     <link rel="stylesheet" href="internships.css">
 </head>
 <body>
 
-<header>
-    <h2>Available Internships</h2>
-    <a href="index.html">Home</a>
-</header>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            Career<span>Portal</span>
+        </div>
 
-<main>
-    <div class="internship">
-        <h2>Data Science Intern</h2>
-        <p>Company: DataLabs</p>
-        <p>Duration: 3 Months</p>
-        <p>Skills: Python, Machine Learning</p>
-        <a href="internship-details.html">View Details</a>
-    </div>
+        <nav>
+            <a href="../Home/home.html">Home</a>
+            <a href="../Job/jobs.html">Jobs</a>
+            <a href="Internships.html" class="active">Internships</a>
+            <a href="../Home/profile.html">Profile</a>
+            <a href="../About/about.html">About</a>
+        </nav>
+    </header>
 
-    <div class="internship">
-        <h2>Web Development Intern</h2>
-        <p>Company: WebTech</p>
-        <p>Duration: 2 Months</p>
-        <p>Skills: HTML, CSS, JavaScript</p>
-        <a href="internship-details.html">View Details</a>
-    </div>
+    <!-- Page Heading -->
+    <section class="page-heading">
+        <p class="tagline">BUILD YOUR EXPERIENCE</p>
 
-    <div class="internship">
-        <h2>Cloud Intern</h2>
-        <p>Company: CloudWorks</p>
-        <p>Duration: 6 Months</p>
-        <p>Skills: Cloud Basics, Linux</p>
-        <a href="internship-details.html">View Details</a>
-    </div>
-</main>
+        <h1>Available <span>Internships</span></h1>
+
+        <p>
+            Explore internships, gain practical experience,
+            and develop the skills you need for your career.
+        </p>
+    </section>
+
+    <!-- Internship Listings -->
+    <main>
+
+        <div class="section-title">
+            <h2>Explore Internships</h2>
+            <p>Find opportunities that match your interests and skills.</p>
+        </div>
+
+        <div class="internship-container">
+
+            <!-- Internship 1 -->
+            <div class="internship">
+
+                <div class="internship-top">
+                    <span class="category">Data Science</span>
+                    <span class="duration">3 Months</span>
+                </div>
+
+                <h2>Data Science Intern</h2>
+
+                <p class="company">DataLabs</p>
+
+                <p class="description">
+                    Work with data, build machine learning models,
+                    and gain experience in data analysis.
+                </p>
+
+                <div class="details">
+                    <p><strong>Duration:</strong> 3 Months</p>
+                    <p><strong>Skills:</strong> Python, Machine Learning</p>
+                    <p><strong>Work Mode:</strong> Hybrid</p>
+                </div>
+
+                <a href="internship-details.html" class="button">View Details</a>
+
+            </div>
+
+            <!-- Internship 2 -->
+            <div class="internship">
+
+                <div class="internship-top">
+                    <span class="category">Web Development</span>
+                    <span class="duration">2 Months</span>
+                </div>
+
+                <h2>Web Development Intern</h2>
+
+                <p class="company">WebTech</p>
+
+                <p class="description">
+                    Learn frontend development and build
+                    responsive websites using web technologies.
+                </p>
+
+                <div class="details">
+                    <p><strong>Duration:</strong> 2 Months</p>
+                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Work Mode:</strong> On-site</p>
+                </div>
+
+                <a href="web-development-details.html" class="button">View Details</a>
+
+            </div>
+
+            <!-- Internship 3 -->
+            <div class="internship">
+
+                <div class="internship-top">
+                    <span class="category">Cloud Computing</span>
+                    <span class="duration">6 Months</span>
+                </div>
+
+                <h2>Cloud Intern</h2>
+
+                <p class="company">CloudWorks</p>
+
+                <p class="description">
+                    Explore cloud computing fundamentals,
+                    Linux systems, and cloud-based services.
+                </p>
+
+                <div class="details">
+                    <p><strong>Duration:</strong> 6 Months</p>
+                    <p><strong>Skills:</strong> Cloud Basics, Linux</p>
+                    <p><strong>Work Mode:</strong> Remote</p>
+                </div>
+
+                <a href="cloud-details.html" class="button">View Details</a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Career Portal. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
