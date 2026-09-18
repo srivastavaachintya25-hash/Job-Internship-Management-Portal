@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+header {
+    background-color: #166534;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+}
+
+main {
+    padding: 30px 8%;
+}
+
+.internship {
+    background-color: white;
+    padding: 22px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.internship a {
+    color: #166534;
+}
+
+.button {
+    display: inline-block;
+    background-color: #166534;
+    color: white !important;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
