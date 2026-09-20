@@ -108,10 +108,12 @@ Each team member works on assigned features through separate branches. Completed
 ```text
 Main Branch
     |
-    ├── Developer Branch 1
-    ├── Developer Branch 2
-    ├── Developer Branch 3
-    └── Developer Branch 4
+Dev Branch
+    |
+    ├── Aamir Haque Branch 1
+    ├── Achintya Srivastava Branch 2
+    ├── Aditya Kumar Branch 3
+    └── Aditya Singh Branch 4
     |
     └── Merge Completed Work
 ```
@@ -121,7 +123,7 @@ Main Branch
 1. Clone the repository:
 
    ```bash
-   git clone YOUR_GITHUB_REPOSITORY_URL
+   git clone https://github.com/srivastavaachintya25-hash/Job-Internship-Management-Portal
    ```
 
 2. Open the project folder in VS Code.
