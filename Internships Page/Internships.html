@@ -12,29 +12,28 @@
 </header>
 
 <main>
-    <div class="internship">
-        <h2>Data Science Intern</h2>
-        <p>Company: DataLabs</p>
-        <p>Duration: 3 Months</p>
-        <p>Skills: Python, Machine Learning</p>
-        <a href="internship-details.html">View Details</a>
+    <main>
+    <h2>Explore Available Internships</h2>
+
+    <div class="internship-controls">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search internships..."
+        >
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="data">Data Science</option>
+            <option value="web">Web Development</option>
+            <option value="cloud">Cloud Computing</option>
+        </select>
     </div>
 
-    <div class="internship">
-        <h2>Web Development Intern</h2>
-        <p>Company: WebTech</p>
-        <p>Duration: 2 Months</p>
-        <p>Skills: HTML, CSS, JavaScript</p>
-        <a href="internship-details.html">View Details</a>
-    </div>
+    <div id="internshipContainer" class="internship-container"></div>
+</main>
 
-    <div class="internship">
-        <h2>Cloud Intern</h2>
-        <p>Company: CloudWorks</p>
-        <p>Duration: 6 Months</p>
-        <p>Skills: Cloud Basics, Linux</p>
-        <a href="internship-details.html">View Details</a>
-    </div>
+<script src="internships.js"></script>
 </main>
 
 </body>
