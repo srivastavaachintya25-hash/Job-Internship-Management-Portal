@@ -1,1 +1,0 @@
-# Job-Internship-Management-Portal
