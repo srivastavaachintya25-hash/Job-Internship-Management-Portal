@@ -1,49 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Form</title>
+    <title>Application Form | Job Portal</title>
     <link rel="stylesheet" href="application-form.css">
 </head>
 <body>
 
-<header>
-    <h2>Career Portal</h2>
-    <a href="jobs.html">Back to Jobs</a>
+<header class="navbar">
+    <div class="container nav-container">
+
+        <div class="logo">
+            <a href="../Home/home.html">Career<span>Portal</span></a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="../Internships Page/Internships.html">Internships</a>
+            <a href="../Application and profile/profile.html">Profile</a>
+            <a href="../Application and profile/user-list.html">Application Records</a>
+            
+        </nav>
+
+        <a href="#" class="login-btn">Login</a>
+
+    </div>
 </header>
 
+<section class="page-header">
+    <div class="container">
+        <h1>Application Form</h1>
+        <p>Share your details to apply for an opportunity.</p>
+    </div>
+</section>
+
 <main class="form-container">
+
     <h1>Apply for an Opportunity</h1>
+
     <p>Fill in your details to submit your application.</p>
 
     <form id="applicationForm">
 
-        <label>Full Name</label>
+        <label for="name">Full Name</label>
         <input type="text" id="name" required
                placeholder="Enter your full name">
 
-        <label>Email Address</label>
+        <label for="email">Email Address</label>
         <input type="email" id="email" required
                placeholder="Enter your email">
 
-        <label>Phone Number</label>
+        <label for="phone">Phone Number</label>
         <input type="tel" id="phone" required
                pattern="[0-9]{10}"
                placeholder="10-digit mobile number">
 
-        <label>Education</label>
+        <label for="education">Education</label>
         <input type="text" id="education" required
                placeholder="Your qualification">
 
-        <label>Skills</label>
+        <label for="skills">Skills</label>
         <textarea id="skills" required
                   placeholder="Enter your skills"></textarea>
 
-        <label>Applying For</label>
+        <label for="position">Applying For</label>
         <input type="text" id="position" required>
 
-        <label>Resume Link</label>
+        <label for="resume">Resume Link</label>
         <input type="url" id="resume" required
                placeholder="Paste your resume link">
 
@@ -52,8 +78,14 @@
         <p id="message"></p>
 
     </form>
+
 </main>
 
+<footer>
+    <p>© 2026 Job & Internship Management Portal. All Rights Reserved.</p>
+</footer>
+
 <script src="application-form.js"></script>
+
 </body>
 </html>

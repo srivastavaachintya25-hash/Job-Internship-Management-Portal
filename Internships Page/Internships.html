@@ -1,21 +1,52 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Internships</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships | Job Portal</title>
     <link rel="stylesheet" href="internships.css">
 </head>
 <body>
 
-<header>
-    <h2>Available Internships</h2>
-    <a href="index.html">Home</a>
+<header class="navbar">
+    <div class="container nav-container">
+
+        <div class="logo">
+            <a href="../Home/home.html">Career<span>Portal</span></a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="../Job/jobs.html">Jobs</a>
+            <a href="Internships.html" class="active">Internships</a>
+            <a href="../Application and profile/profile.html">Profile</a>
+            <a href="../Application and profile/user-list.html">Application Records</a>
+            
+        </nav>
+
+        <a href="../Login/login.html" class="login-btn">Login</a>
+
+    </div>
 </header>
 
-<main>
-    <main>
+<section class="page-header">
+    <div class="container">
+        <h1>Available Internships</h1>
+        <p>Explore opportunities to learn, grow and gain practical experience.</p>
+    </div>
+</section>
+
+<main class="internships-main">
+
     <h2>Explore Available Internships</h2>
 
+    <p class="internships-intro">
+        Find an internship that matches your interests and skills.
+    </p>
+
     <div class="internship-controls">
+
         <input
             type="text"
             id="searchInput"
@@ -28,13 +59,18 @@
             <option value="web">Web Development</option>
             <option value="cloud">Cloud Computing</option>
         </select>
+
     </div>
 
     <div id="internshipContainer" class="internship-container"></div>
+
 </main>
 
+<footer>
+    <p>© 2026 Job & Internship Management Portal. All Rights Reserved.</p>
+</footer>
+
 <script src="internships.js"></script>
-</main>
 
 </body>
 </html>

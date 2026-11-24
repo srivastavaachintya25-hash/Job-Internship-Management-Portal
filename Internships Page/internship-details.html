@@ -1,29 +1,70 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Internship Details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Details | Job Portal</title>
     <link rel="stylesheet" href="internships.css">
 </head>
 <body>
 
-<header>
-    <h2>Internship Details</h2>
-    <a href="internships.html">Back to Internships</a>
+<header class="navbar">
+    <div class="container nav-container">
+
+        <div class="logo">
+            <a href="../Home/home.html">Career<span>Portal</span></a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="../Job/jobs.html">Jobs</a>
+            <a href="../Internships Page/Internships.html" class="active">Internships</a>
+            <a href="../Application and profile/profile.html">Profile</a>
+            <a href="../Application and profile/user-list.html">Application Records</a>
+            
+        </nav>
+
+        <a href="../Login/login.html" class="login-btn">Login</a>
+
+    </div>
 </header>
 
-<main class="internship">
-    <h2>Data Science Intern</h2>
-    <p><b>Company:</b> DataLabs</p>
-    <p><b>Duration:</b> 3 Months</p>
-    <p><b>Skills:</b> Python and Machine Learning</p>
+<section class="page-header">
+    <div class="container">
+        <h1>Internship Details</h1>
+        <p>Learn more about this opportunity before applying.</p>
+    </div>
+</section>
+
+<main class="internship-detail">
+
+    <h1>Data Science Intern</h1>
+
+    <p><strong>Company:</strong> DataLabs</p>
+
+    <p><strong>Duration:</strong> 3 Months</p>
+
+    <p><strong>Skills:</strong> Python and Machine Learning</p>
+
+    <p><strong>Mode:</strong> Remote</p>
+
     <p>
-        <b>Description:</b>
-        Assist the team with data analysis projects.
+        <strong>Description:</strong>
+        Assist the team with data analysis projects,
+        machine learning models and data visualization.
     </p>
 
-    <a class="button" href="apply.html">Apply Now</a>
+    <a class="button"
+       href="../Job/application-form.html?role=Data%20Science%20Intern">
+        Apply Now
+    </a>
+
 </main>
-      <script src="internships.js"></script>
+
+<footer>
+    <p>© 2026 Job & Internship Management Portal. All Rights Reserved.</p>
+</footer>
 
 </body>
-</html> correct js links
+</html>

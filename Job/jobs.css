@@ -37,12 +37,41 @@ body {
    NAVBAR
    ========================================= */
 
+
+/* COMMON THEME FOR ALL PAGES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+
 .navbar {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e7eb;
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .nav-container {
@@ -50,11 +79,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 25px;
 }
-
-
-/* ---------- LOGO ---------- */
 
 .logo a {
     text-decoration: none;
@@ -66,9 +92,6 @@ body {
 .logo span {
     color: #2563eb;
 }
-
-
-/* ---------- NAV LINKS ---------- */
 
 .nav-links {
     display: flex;
@@ -89,9 +112,6 @@ body {
     color: #2563eb;
 }
 
-
-/* ---------- LOGIN BUTTON ---------- */
-
 .login-btn {
     text-decoration: none;
     background-color: #2563eb;
@@ -107,6 +127,109 @@ body {
     background-color: #1d4ed8;
     transform: translateY(-1px);
 }
+
+/* COMMON PAGE THEME */
+
+.page-header {
+    background: linear-gradient(135deg, #eff6ff, #ffffff);
+    padding: 65px 0;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.page-header h1 {
+    color: #111827;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.common-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.common-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.common-btn:hover {
+    background: #1d4ed8;
+}
+
+/* COMMON FOOTER */
+
+.footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 13px;
+}
+
+/* RESPONSIVE NAVBAR */
+
+@media (max-width: 900px) {
+    .nav-container {
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        padding: 15px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .page-header {
+        padding: 45px 0;
+    }
+
+    .page-header h1 {
+        font-size: 30px;
+    }
+}
+
 
 
 /* =========================================

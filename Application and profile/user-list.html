@@ -1,26 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Records</title>
+    <title>Application Records | Job Portal</title>
     <link rel="stylesheet" href="user-list.css">
 </head>
 <body>
 
-<header>
-    <h2>Career Portal - Admin</h2>
-    <a href="profile.html">Profile</a>
+<header class="navbar">
+    <div class="container nav-container">
+
+        <div class="logo">
+            <a href="../Home/home.html">Career<span>Portal</span></a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="../Job/jobs.html">Jobs</a>
+            <a href="../Internships Page/Internships.html">Internships</a>
+            <a href="profile.html">Profile</a>
+            <a href="user-list.html" class="active">Application Records</a>
+        </nav>
+
+        <a href="../Login/login.html" class="login-btn">Login</a>
+
+    </div>
 </header>
 
-<main class="container">
+<main class="container records-main">
 
     <h1>Application Records</h1>
-    <p>View and manage submitted applications.</p>
+
+    <p class="records-intro">
+        View and manage submitted applications.
+    </p>
 
     <div class="controls">
-        <input type="text" id="searchInput"
-               placeholder="Search by name, email or position">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name, email or position"
+        >
 
         <select id="statusFilter">
             <option value="all">All Statuses</option>
@@ -30,10 +53,13 @@
             <option value="Interview">Interview</option>
             <option value="Final Result">Final Result</option>
         </select>
+
     </div>
 
     <div class="table-container">
+
         <table>
+
             <thead>
                 <tr>
                     <th>Name</th>
@@ -46,13 +72,20 @@
             </thead>
 
             <tbody id="userTable"></tbody>
+
         </table>
+
     </div>
 
     <p id="emptyMessage"></p>
 
 </main>
 
+<footer>
+    <p>© 2026 Job & Internship Management Portal. All Rights Reserved.</p>
+</footer>
+
 <script src="user-list.js"></script>
+
 </body>
 </html>

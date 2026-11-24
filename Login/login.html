@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Career Portal</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    
+<nav class="navbar">
+    <div class="nav-container">
+
+        <a href="../Home/home.html" class="logo">Career<span>Portal</span></a>
+
+        <ul class="nav-links">
+            <li><a href="../Home/home.html">Home</a></li>
+            <li><a href="../Job/jobs.html">Jobs</a></li>
+            <li><a href="../Internships Page/Internships.html">Internships</a></li>
+            <li><a href="../Application and profile/profile.html">Profile</a></li>
+            <li><a href="../Application and profile/user-list.html">Application Records</a></li>
+        </ul>
+
+        <a href="login.html" class="nav-login active">Login</a>
+
+    </div>
+</nav>
+
+
+    <section class="login-section">
+        <div class="login-container">
+
+            <div class="login-heading">
+                <h1>Welcome Back!</h1>
+                <p>Login to access your Career Portal account.</p>
+            </div>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password"
+                           placeholder="Enter your password" required>
+                </div>
+
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox" id="remember">
+                        Remember me
+                    </label>
+
+                    <a href="#" id="forgotPassword">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <p id="message"></p>
+
+            </form>
+
+            <div class="register-link">
+                Don't have an account?
+                <a href="register.html">Create Account</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Career Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

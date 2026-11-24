@@ -1,80 +1,227 @@
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f1f5f9;
-    color: #1e293b;
-}
-
-header {
-    background: #0f172a;
-    color: white;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
 }
 
 .container {
     width: 90%;
-    margin: 35px auto;
+    max-width: 1200px;
+    margin: auto;
 }
+
+/* NAVBAR */
+
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2563eb;
+}
+
+.login-btn {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background: #1d4ed8;
+}
+
+/* MAIN CONTENT */
+
+.records-main {
+    padding: 45px 0;
+}
+
+.records-main h1 {
+    color: #111827;
+    font-size: 34px;
+}
+
+.records-intro {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* SEARCH AND FILTER */
 
 .controls {
     display: flex;
     gap: 15px;
-    margin: 25px 0;
     flex-wrap: wrap;
+    margin: 25px 0;
 }
 
-input, select {
-    padding: 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 6px;
+.controls input,
+.controls select {
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: white;
     font-size: 14px;
 }
 
-input {
+.controls input {
     flex: 1;
-    min-width: 220px;
+    min-width: 230px;
 }
+
+.controls select {
+    min-width: 190px;
+}
+
+.controls input:focus,
+.controls select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* TABLE */
 
 .table-container {
     overflow-x: auto;
     background: white;
-    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 750px;
+    min-width: 780px;
 }
 
 th, td {
     padding: 15px;
-    border-bottom: 1px solid #e2e8f0;
     text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
 }
 
 th {
-    background: #172554;
-    color: white;
+    background: #eff6ff;
+    color: #172554;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
 }
 
 td select {
-    max-width: 160px;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: white;
 }
+
+/* EMPTY MESSAGE */
 
 #emptyMessage {
     color: #64748b;
-    margin-top: 20px;
+    margin-top: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 40px;
+    font-size: 13px;
+    margin-top: 580px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+    .nav-links {
+        gap: 12px;
+    }
+}
+
+@media(max-width: 600px) {
+    .nav-container {
+        padding: 15px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .records-main h1 {
+        font-size: 27px;
+    }
 }

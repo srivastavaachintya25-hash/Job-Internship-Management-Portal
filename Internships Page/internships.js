@@ -1,3 +1,4 @@
+
 const internships = [
     {
         id: 1,
@@ -51,6 +52,7 @@ const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 
 function displayInternships(list) {
+
     container.innerHTML = "";
 
     if (list.length === 0) {
@@ -59,6 +61,7 @@ function displayInternships(list) {
     }
 
     list.forEach(function(item) {
+
         const card = document.createElement("div");
         card.className = "internship";
 
@@ -80,20 +83,31 @@ function displayInternships(list) {
         const applyLink = document.createElement("a");
         applyLink.className = "button";
         applyLink.textContent = "Apply Now";
+
         applyLink.href =
             "../Job/application-form.html?role=" +
             encodeURIComponent(item.title);
 
-        card.append(title, company, duration, skills, mode, applyLink);
+        card.append(
+            title,
+            company,
+            duration,
+            skills,
+            mode,
+            applyLink
+        );
+
         container.appendChild(card);
     });
 }
 
 function filterInternships() {
+
     const search = searchInput.value.toLowerCase();
     const category = categoryFilter.value;
 
     const filtered = internships.filter(function(item) {
+
         const matchesSearch =
             item.title.toLowerCase().includes(search) ||
             item.company.toLowerCase().includes(search) ||
