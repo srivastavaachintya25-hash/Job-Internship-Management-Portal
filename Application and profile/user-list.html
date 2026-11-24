@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Records</title>
+    <link rel="stylesheet" href="user-list.css">
+</head>
+<body>
+
+<header>
+    <h2>Career Portal - Admin</h2>
+    <a href="profile.html">Profile</a>
+</header>
+
+<main class="container">
+
+    <h1>Application Records</h1>
+    <p>View and manage submitted applications.</p>
+
+    <div class="controls">
+        <input type="text" id="searchInput"
+               placeholder="Search by name, email or position">
+
+        <select id="statusFilter">
+            <option value="all">All Statuses</option>
+            <option value="Applied">Applied</option>
+            <option value="Under Review">Under Review</option>
+            <option value="Shortlisted">Shortlisted</option>
+            <option value="Interview">Interview</option>
+            <option value="Final Result">Final Result</option>
+        </select>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Position</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Update Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="userTable"></tbody>
+        </table>
+    </div>
+
+    <p id="emptyMessage"></p>
+
+</main>
+
+<script src="user-list.js"></script>
+</body>
+</html>
