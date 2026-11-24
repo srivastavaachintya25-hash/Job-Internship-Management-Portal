@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+header {
+    background-color: #166534;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+}
+
+main {
+    padding: 30px 8%;
+}
+
+.internship {
+    background-color: white;
+    padding: 22px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.internship a {
+    color: #166534;
+}
+
+.button {
+    display: inline-block;
+    background-color: #166534;
+    color: white !important;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.internship-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.internship-controls input,
+.internship-controls select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.internship-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.internship {
+    margin: 0;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.internship .button {
+    display: inline-block;
+    margin-top: 10px;
+    background: #166534;
+    color: white;
+    text-decoration: none;
+}
