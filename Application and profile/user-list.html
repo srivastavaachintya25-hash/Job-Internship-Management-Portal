@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Records | Job Portal</title>
+
     <link rel="stylesheet" href="user-list.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../auth.js" defer></script>
 </head>
 <body>
 
+
 <header class="navbar">
-    <div class="container nav-container">
 
-        <div class="logo">
-            <a href="../Home/home.html">Career<span>Portal</span></a>
-        </div>
+    <a href="../Home/home.html" class="logo">
+        Career<span>Portal</span>
+    </a>
 
-        <nav class="nav-links">
-            <a href="../Home/home.html">Home</a>
-            <a href="../Job/jobs.html">Jobs</a>
-            <a href="../Internships Page/Internships.html">Internships</a>
-            <a href="profile.html">Profile</a>
-            <a href="user-list.html" class="active">Application Records</a>
-        </nav>
+    <nav class="nav-links">
+        <a href="../Home/home.html" >Home</a>
+        <a href="../Job/jobs.html">Jobs</a>
+        <a href="../Internships Page/Internships.html">Internships</a>
+        <a href="../Application and profile/profile.html">Profile</a>
+        <a href="../Application and profile/user-list.html" class="active">Application Records</a>
+    </nav>
 
-        <a href="../Login/login.html" class="login-btn">Login</a>
-
-    </div>
+<div class="nav-auth" id="navAuth" data-login-url="../Login/login.html">
+    <button type="button" class="login-button"
+        onclick="window.location.href='../Login/login.html'">
+        Login
+    </button>
+</div>
 </header>
 
 <main class="container records-main">
@@ -38,12 +44,8 @@
     </p>
 
     <div class="controls">
-
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search by name, email or position"
-        >
+        <input type="text" id="searchInput"
+               placeholder="Search by name, email or position">
 
         <select id="statusFilter">
             <option value="all">All Statuses</option>
@@ -53,13 +55,10 @@
             <option value="Interview">Interview</option>
             <option value="Final Result">Final Result</option>
         </select>
-
     </div>
 
     <div class="table-container">
-
         <table>
-
             <thead>
                 <tr>
                     <th>Name</th>
@@ -72,9 +71,7 @@
             </thead>
 
             <tbody id="userTable"></tbody>
-
         </table>
-
     </div>
 
     <p id="emptyMessage"></p>
@@ -86,6 +83,5 @@
 </footer>
 
 <script src="user-list.js"></script>
-
 </body>
 </html>

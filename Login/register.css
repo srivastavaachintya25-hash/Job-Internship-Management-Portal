@@ -1,0 +1,144 @@
+
+/* REGISTER PAGE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #172554;
+    min-height: 100vh;
+}
+
+/* Register container */
+
+.register-container {
+    width: 90%;
+    max-width: 520px;
+    margin: 65px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(23, 37, 84, 0.10);
+}
+
+.register-container h1 {
+    font-size: 30px;
+    color: #172554;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.register-container p {
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+
+/* Registration form */
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#registerForm label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+}
+
+#registerForm input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+#registerForm input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Create account button */
+
+#registerForm button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    background: #172554;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#registerForm button:hover {
+    background: #2563eb;
+}
+
+/* Login link */
+
+.login-link {
+    text-align: center;
+    margin-top: 22px;
+    color: #475569;
+    font-size: 15px;
+}
+
+.login-link a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Message */
+
+#message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 25px;
+    color: #334155;
+    font-size: 14px;
+}
+
+.login-link {
+    color: #2563eb;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-link:hover {
+    color: #172554;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}

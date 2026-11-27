@@ -1,4 +1,6 @@
 
+/* LOGIN PAGE */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,233 +9,193 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f5f7fb;
-    color: #1f2937;
+    background: #f1f5f9;
+    color: #172554;
+    min-height: 100vh;
 }
 
-/* NAVBAR */
-.navbar {
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 14px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* LOGO */
-.logo {
-    font-size: 27px;
-    font-weight: 800;
-    color: #111827;
-    text-decoration: none;
-    letter-spacing: -0.5px;
-}
-
-.logo span {
-    color: #2563eb;
-}
-
-/* NAV LINKS */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #374151;
-    font-size: 15px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #2563eb;
-}
-
-/* LOGIN BUTTON */
-.nav-login {
-    background: #2563eb;
-    color: white;
-    padding: 13px 24px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.nav-login:hover {
-    background: #1d4ed8;
-}
-
-.nav-login.active {
-    background: #2563eb;
-    color: white;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 18px;
-    }
-}
-
-
-
-/* Login Section */
-.login-section {
-    min-height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-}
+/* Login container */
 
 .login-container {
-    background: white;
-    width: 100%;
+    width: 90%;
     max-width: 430px;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    margin: 75px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(23, 37, 84, 0.10);
 }
 
-.login-heading {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-heading h1 {
+.login-container h1 {
+    font-size: 30px;
     color: #172554;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
-.login-heading p {
-    color: #6b7280;
-    font-size: 14px;
+.login-container p {
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 28px;
+    line-height: 1.5;
 }
 
 /* Form */
-.form-group {
-    margin-bottom: 20px;
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
+#loginForm label {
+    font-size: 15px;
     font-weight: 600;
+    color: #334155;
 }
 
-.form-group input {
+#loginForm input[type="email"],
+#loginForm input[type="password"] {
     width: 100%;
     padding: 13px;
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
     font-size: 15px;
     outline: none;
 }
 
-.form-group input:focus {
+#loginForm input:focus {
     border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
-/* Options */
-.form-options {
+/* Remember me */
+
+.remember-forgot {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 13px;
-    margin-bottom: 25px;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 14px;
 }
 
-.form-options a {
+.remember-forgot a {
     color: #2563eb;
     text-decoration: none;
 }
 
-.form-options input {
-    margin-right: 5px;
+.remember-forgot a:hover {
+    text-decoration: underline;
 }
 
-/* Button */
-.login-btn {
+/* Login button */
+
+#loginForm button {
     width: 100%;
     padding: 13px;
-    background: #2563eb;
+    margin-top: 10px;
+    background: #172554;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 7px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.login-btn:hover {
-    background: #1d4ed8;
+#loginForm button:hover {
+    background: #2563eb;
 }
+
+/* Create account link */
+
+.create-account {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 15px;
+    color: #475569;
+}
+
+.create-account a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+/* Error/success message */
 
 #message {
     text-align: center;
-    margin-top: 15px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* REMEMBER ME AND FORGOT PASSWORD */
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 20px;
     font-size: 14px;
 }
 
-/* Register */
-.register-link {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 14px;
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #172554;
+    cursor: pointer;
 }
 
-.register-link a {
+.remember-option input {
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+.forgot-link {
     color: #2563eb;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
+.forgot-link:hover {
+    color: #172554;
+    text-decoration: underline;
+}
+
+/* CREATE ACCOUNT */
+
+.register-text {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 14px;
+    color: #334155;
+}
+
+.register-link {
+    color: #2563eb;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 3px;
+    transition: 0.3s;
+}
+
+.register-link:hover {
+    color: #172554;
+    text-decoration: underline;
+}
 /* Footer */
+
 footer {
-    background: #111827;
-    color: #d1d5db;
     text-align: center;
     padding: 20px;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .login-container {
-        padding: 25px;
-    }
+    color: #64748b;
+    font-size: 14px;
 }

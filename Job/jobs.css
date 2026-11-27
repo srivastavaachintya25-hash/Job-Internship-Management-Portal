@@ -1234,3 +1234,25 @@ body {
     }
 
 }
+/* Welcome and Login as normal navbar text */
+
+#authNav,
+.navbar #authNav,
+nav #authNav {
+    background: transparent !important;
+    color: #172554 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#authNav:hover {
+    color: #2563eb !important;
+    background: transparent !important;
+    transform: none !important;
+}

@@ -5,61 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Details | Job Portal</title>
+
     <link rel="stylesheet" href="internships.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../auth.js" defer></script>
 </head>
 <body>
 
+
 <header class="navbar">
-    <div class="container nav-container">
 
-        <div class="logo">
-            <a href="../Home/home.html">Career<span>Portal</span></a>
-        </div>
-
-        <nav class="nav-links">
-            <a href="../Home/home.html">Home</a>
-            <a href="../Job/jobs.html">Jobs</a>
-            <a href="../Internships Page/Internships.html" class="active">Internships</a>
-            <a href="../Application and profile/profile.html">Profile</a>
-            <a href="../Application and profile/user-list.html">Application Records</a>
-            
-        </nav>
-
-        <a href="../Login/login.html" class="login-btn">Login</a>
-
-    </div>
-</header>
-
-<section class="page-header">
-    <div class="container">
-        <h1>Internship Details</h1>
-        <p>Learn more about this opportunity before applying.</p>
-    </div>
-</section>
-
-<main class="internship-detail">
-
-    <h1>Data Science Intern</h1>
-
-    <p><strong>Company:</strong> DataLabs</p>
-
-    <p><strong>Duration:</strong> 3 Months</p>
-
-    <p><strong>Skills:</strong> Python and Machine Learning</p>
-
-    <p><strong>Mode:</strong> Remote</p>
-
-    <p>
-        <strong>Description:</strong>
-        Assist the team with data analysis projects,
-        machine learning models and data visualization.
-    </p>
-
-    <a class="button"
-       href="../Job/application-form.html?role=Data%20Science%20Intern">
-        Apply Now
+    <a href="../Home/home.html" class="logo">
+        Career<span>Portal</span>
     </a>
 
+    <nav class="nav-links">
+        <a href="../Home/home.html">Home</a>
+        <a href="../Job/jobs.html">Jobs</a>
+        <a href="../Internships Page/Internships.html">Internships</a>
+        <a href="../Application and profile/profile.html">Profile</a>
+        <a href="../Application and profile/user-list.html">Application Records</a>
+    </nav>
+
+<div class="nav-auth" id="navAuth" data-login-url="../Login/login.html">
+    <button type="button" class="login-button"
+        onclick="window.location.href='../Login/login.html'">
+        Login
+    </button>
+</div>
+
+</header>
+
+
+<main class="internships-main">
+    <h1>Internship Details</h1>
+    <p>Explore the internship opportunity and its requirements.</p>
+
+    <div class="internship-container">
+        <div class="internship-card">
+            <h2>Data Science Intern</h2>
+            <h3>DataLabs</h3>
+            <p><strong>Duration:</strong> 3 Months</p>
+            <p><strong>Skills:</strong> Python, Machine Learning</p>
+            <p><strong>Mode:</strong> Remote</p>
+
+            <a href="../Job/application-form.html?role=Data%20Science%20Intern">
+                Apply Now
+            </a>
+        </div>
+    </div>
+
+    <a href="Internships.html">Back to Internships</a>
 </main>
 
 <footer>

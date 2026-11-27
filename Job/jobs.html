@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,42 +9,39 @@
     <title>Software Developer | Job Portal</title>
 
     <link rel="stylesheet" href="./jobs.css">
+    <link rel="stylesheet" href="../navbar.css">
 
+    <script src="../auth.js" defer></script>
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    
+<header class="navbar">
 
-    <header class="navbar">
+    <a href="../Home/home.html" class="logo">
+        Career<span>Portal</span>
+    </a>
 
-        <div class="container nav-container">
+    <nav class="nav-links">
+        <a href="../Home/home.html">Home</a>
+        <a href="../Job/jobs.html" class="active">Jobs</a>
+        <a href="../Internships Page/Internships.html">Internships</a>
+        <a href="../Application and profile/profile.html">Profile</a>
+        <a href="../Application and profile/user-list.html">Application Records</a>
+    </nav>
 
-            <div class="logo">
-                <a href="../Home/home.html">
-                    Career<span>Portal</span>
-                </a>
-            </div>
-
-            <nav class="nav-links">
-                <a href="../Home/home.html">Home</a>
-                <a href="jobs.html" class="active">Jobs</a>
-                <a href="../Internships Page/Internships.html">Internships</a>
-                <a href="../Application and profile/profile.html">Profile</a>
-                <a href="../Application and profile/user-list.html">Application Records</a>
-                
-            </nav>
-
-            <a href="login.html" class="login-btn">
-                Login
-            </a>
-
-        </div>
-
-    </header>
+<div class="nav-auth" id="navAuth" data-login-url="../Login/login.html">
+    <button type="button" class="login-button"
+        onclick="window.location.href='../Login/login.html'">
+        Login
+    </button>
+</div>
+</header>
 
 
-    <!-- ================= JOB DETAILS HEADER ================= -->
+
+    <!-- JOB DETAILS HEADER -->
 
     <section class="job-detail-header">
 
@@ -86,14 +84,14 @@
     </section>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
+    <!-- MAIN CONTENT -->
 
     <main class="job-details-section">
 
         <div class="container details-layout">
 
 
-            <!-- ================= LEFT CONTENT ================= -->
+            <!-- LEFT CONTENT -->
 
             <div class="details-main">
 
@@ -303,7 +301,7 @@
             </div>
 
 
-            <!-- ================= RIGHT SIDEBAR ================= -->
+            <!-- RIGHT SIDEBAR -->
 
             <aside class="details-sidebar">
 
@@ -332,7 +330,11 @@
 
                     </div>
 
-                    <a href="application-form.html?role=Software%20Developer"class="apply-btn">Apply Now</a>
+                    <a
+                        href="application-form.html?role=Software%20Developer"
+                        class="apply-btn">
+                        Apply Now
+                    </a>
 
                 </div>
 
@@ -382,7 +384,7 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- FOOTER -->
 
     <footer class="footer">
 

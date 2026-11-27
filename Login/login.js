@@ -1,16 +1,24 @@
 
 const loginForm = document.getElementById("loginForm");
-const message = document.getElementById("message");
 
 loginForm.addEventListener("submit", function(event) {
+
     event.preventDefault();
 
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
 
-    // Demo login credentials
-    if (email === "student@gmail.com" &&
-        password === "123456") {
+    const savedEmail = localStorage.getItem("career_registered_email");
+    const savedPassword = localStorage.getItem("career_registered_password");
+
+    const message = document.getElementById("message");
+
+    if (email === savedEmail && password === savedPassword) {
+
+        const username = email.split("@")[0];
+
+        localStorage.setItem("career_username", username);
+        localStorage.setItem("career_logged_in", "true");
 
         message.style.color = "green";
         message.textContent = "Login successful!";
@@ -20,14 +28,10 @@ loginForm.addEventListener("submit", function(event) {
         }, 1000);
 
     } else {
+
         message.style.color = "red";
         message.textContent = "Invalid email or password!";
-    }
-});
 
-// Forgot password
-document.getElementById("forgotPassword")
-    .addEventListener("click", function(event) {
-        event.preventDefault();
-        alert("Please contact the administrator to reset your password.");
-    });
+    }
+
+});
